@@ -186,6 +186,24 @@
       padding: 20px;
       text-align: center;
     }
+     #image-section {
+      width: 100%;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .image-caption {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      color: #fff;
+      }
   </style>
 </head>
 <body>
@@ -264,9 +282,13 @@
     <a class="button" href="https://zonaarqueologicamatatlan.netlify.app">¡Click aquí!</a>
   </section>
   
-  <section class="section">
-    <h2>Visita nuestro museo</h2>
-    <p>Visitar el Museo Comunitario Ta Guil Reiñ de Santiago Matatlán en México es una experiencia única. La exhibición se enfoca en la cultura local, la historia de la comunidad y una demostración de la elaboración de nuestro maravilloso mezcal.</p>
+  <section class="image-section">
+     <a href="https://www.google.com/maps/dir/Independencia+1283,+70440+Santiago+Matatl%C3%A1n,+Oax./Templo+de+Santiago+Ap%C3%B3stol/Plaza+Civica/'16.869466,-96.368536'/'16.863054,-96.363642'/'16.8645783,-96.3628266'/'16.8634771,-96.3633735'/@16.8657283,-96.3845128,15.55z/data=!4m36!4m35!1m5!1m1!1s0x85c0cb1ed34455a3:0x268764a86c954141!2m2!1d-96.3834856!2d16.8660782!1m5!1m1!1s0x85c0cb1ecb5a7f25:0x57543ba1303f6f7e!2m2!1d-96.3827481!2d16.8661662!1m5!1m1!1s0x85c0cb192c155555:0x2a845d73d0e3b2eb!2m2!1d-96.3833659!2d16.8664584!1m3!2m2!1d-96.368536!2d16.869466!1m3!2m2!1d-96.363642!2d16.863054!1m3!2m2!1d-96.3628266!2d16.8645783!1m3!2m2!1d-96.3633735!2d16.8634771!3e1?entry=ttu">
+      <img src="6.jpg" alt="Descripción de la imagen">
+      <div class="image-caption">
+        <p>VISITA NUESTROS DESTINOS TURÍSTICOS</p>
+      </div>
+    </a>
   </section>
   
  <div class="map-section">
@@ -309,7 +331,7 @@
           audioElement = new Audio('matat_ing.mp3');
           break;
         case 'zapoteco':
-          audioElement = new Audio('audio/zapoteco.mp3');
+          audioElement = new Audio('zapoteco.mp3');
           break;
         default:
           return;
